@@ -1,0 +1,25 @@
+---
+name: Text-Password-Pronounceable-RandomCase
+version: 0.01
+author:
+  - 'Mario Domgoergen <mdom@cpan.org>'
+abstract: |-
+  Generate pronounceable
+  passwords with random case
+license: perl
+resources:
+  license: ~
+requires:
+  Readonly: 0
+  Text::Password::Pronounceable: 0
+  parent: 0
+build_requires:
+  Test::More: 0
+provides:
+  Text::Password::Pronounceable::RandomCase:
+    file: lib/Text/Password/Pronounceable/RandomCase.pm
+    version: 0.01
+generated_by: Module::Build version 0.32
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
