@@ -5,16 +5,22 @@ use warnings;
 use parent 'Text::Password::Pronounceable';
 use Readonly;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub generate {
     my ( $self, $min, $max, $prob ) = @_;
     Readonly::Scalar my $DEFAULT_PROBALITITY => 4;
-    if ( ref $self ) {
-        $min  ||= $self->{min};
-        $max  ||= $self->{max} || $self->{min};
-        $prob ||= $self->{prob} || $DEFAULT_PROBALITITY;
+    Readonly::Scalar my $DEFAULT_LENGTH      => 8;
+
+    if (ref $self) {
+	$min  ||= $self->{min}; 
+	$max  ||= $self->{max};
+	$prob ||= $self->{prob};
     }
+
+    $min  ||= $DEFAULT_LENGTH;
+    $max  ||= $min;
+    $prob ||= $DEFAULT_PROBALITITY;
 
     my $password = $self->SUPER::generate( $min, $max );
 
@@ -51,10 +57,14 @@ passwords with random case
 =head1 DESCRIPTION
 
 L<Text::Password::Pronounceable> produces pronouncable passwords. But
-it has the one advantage that it only uses lower case characters. This
+it has the one disadvantage that it only uses lower case characters. This
 module tries to solve this shortcoming. The two methods I<new()> and
 I<generate()> take a third parameter, which determines the frequency of
 upper case characters. Any 1/N'th character will be uppercased on average.
+
+If you do not pass any arguments, I<generate()> will produce passwords
+with a length of eight characters and a 1/4 probaility for any
+character to be uppercased.
 
 =head1 DEPENDENCIES
 

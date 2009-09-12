@@ -15,11 +15,15 @@ SYNOPSIS
 
 DESCRIPTION
     Text::Password::Pronounceable produces pronouncable passwords. But it
-    has the one advantage that it only uses lower case characters. This
+    has the one disadvantage that it only uses lower case characters. This
     module tries to solve this shortcoming. The two methods *new()* and
     *generate()* take a third parameter, which determines the frequency of
     upper case characters. Any 1/N'th character will be uppercased on
     average.
+
+    If you do not pass any arguments, *generate()* will produce passwords
+    with a length of eight characters and a 1/4 probaility for any character
+    to be uppercased.
 
 DEPENDENCIES
     Text::Password::Pronounceable
