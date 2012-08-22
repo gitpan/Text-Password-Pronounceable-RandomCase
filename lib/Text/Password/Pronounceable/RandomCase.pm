@@ -5,7 +5,7 @@ use warnings;
 use parent 'Text::Password::Pronounceable';
 use Readonly;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub generate {
     my ( $self, $min, $max, $prob ) = @_;
@@ -63,7 +63,7 @@ I<generate()> take a third parameter, which determines the frequency of
 upper case characters. Any 1/N'th character will be uppercased on average.
 
 If you do not pass any arguments, I<generate()> will produce passwords
-with a length of eight characters and a 1/4 probaility for any
+with a length of eight characters and a 1/4 probability for any
 character to be uppercased.
 
 =head1 DEPENDENCIES
@@ -72,7 +72,7 @@ L<Text::Password::Pronounceable>
 
 =head1 VERSION
 
-0.01
+0.03
 
 =head1 AUTHOR
 

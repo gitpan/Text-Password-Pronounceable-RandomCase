@@ -22,14 +22,14 @@ DESCRIPTION
     average.
 
     If you do not pass any arguments, *generate()* will produce passwords
-    with a length of eight characters and a 1/4 probaility for any character
-    to be uppercased.
+    with a length of eight characters and a 1/4 probability for any
+    character to be uppercased.
 
 DEPENDENCIES
     Text::Password::Pronounceable
 
 VERSION
-    0.01
+    0.03
 
 AUTHOR
     Mario Domgoergen <mdom@cpan.org>
@@ -49,18 +49,22 @@ SUPPORT
 
     You can also look for information at:
 
-    * RT: CPAN's request tracker
+    *   RT: CPAN's request tracker
+
         <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Text-Password-Pronounceabl
         e-RandomCase>
 
-    * AnnoCPAN: Annotated CPAN documentation
+    *   AnnoCPAN: Annotated CPAN documentation
+
         <http://annocpan.org/dist/Text-Password-Pronounceable-RandomCase>
 
-    * CPAN Ratings
+    *   CPAN Ratings
+
         <http://cpanratings.perl.org/d/Text-Password-Pronounceable-RandomCas
         e>
 
-    * Search CPAN
+    *   Search CPAN
+
         <http://search.cpan.org/dist/Text-Password-Pronounceable-RandomCase>
 
 LICENSE AND COPYRIGHT
@@ -69,7 +73,9 @@ LICENSE AND COPYRIGHT
     This program is free software; you can redistribute it and/or modify it
     under the terms of either:
 
-    * the GNU General Public License as published by the Free Software
-    Foundation; either version 1, or (at your option) any later version, or
-    * the Artistic License version 2.0.
+    *   the GNU General Public License as published by the Free Software
+        Foundation; either version 1, or (at your option) any later version,
+        or
+
+    *   the Artistic License version 2.0.
 
